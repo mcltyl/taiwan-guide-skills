@@ -1,16 +1,13 @@
-# Taiwan Guide Skills
+# Taiwan Skills 🇹🇼
 
-**Everything first-time visitors need to know — including what the guidebooks won't tell you.**
+**Everything you need for Taiwan — travel, research, local context.**
 
-Planning your first trip to Taiwan? This isn't just another travel guide. It covers the practical stuff (visa, transport, food) plus the cultural context that helps you actually understand the place — why Taiwanese people act the way they do, what the real Taiwan looks like beyond the tourist surface, and which hidden gems the locals love.
+A growing collection of Taiwan-specific agent skills:
 
-This Agent Skill provides:
-- **Practical info:** Visa, money, transport, apps
-- **Food culture:** What to eat, where, and how
-- **Cultural etiquette:** Do's, don'ts, and why
-- **Real Taiwan:** What locals actually think (but won't tell you)
-- **Hidden gems:** Places tourists miss
-- **Historical context:** Why Taiwan is the way it is
+| Skill | Description |
+|-------|-------------|
+| [taiwan-guide](skills/taiwan-guide) | First-time visitor guide: culture, food, transport, history, hidden gems |
+| [taiwan-forum-search](skills/taiwan-forum-search) | Search Taiwan forums (PTT, Dcard, Mobile01, 巴哈姆特) |
 
 Works with Claude Code, Codex CLI, OpenClaw, and any Agent Skills-compatible tool.
 
@@ -33,120 +30,91 @@ Add the contents of this repo to a `/.claude` folder in your project.
 #### OpenCode
 
 ```bash
-git clone https://github.com/mcltyl/taiwan-guide-skills.git ~/.opencode/skills/taiwan-guide-skills
+git clone https://github.com/mcltyl/taiwan-guide-skills.git ~/.opencode/skills/taiwan-skills
 ```
 
 #### OpenClaw
 
 ```bash
-git clone https://github.com/mcltyl/taiwan-guide-skills.git ~/.openclaw/skills/taiwan-guide-skills
+git clone https://github.com/mcltyl/taiwan-guide-skills.git ~/.openclaw/skills/taiwan-skills
 ```
 
-## Skills
+---
 
-| Skill | Description |
-|-------|-------------|
-| [taiwan-guide](skills/taiwan-guide) | Comprehensive Taiwan guide for first-time visitors. Culture, food, transport, history, hidden gems, and local insights. |
+## Skills Overview
+
+### taiwan-guide
+
+Comprehensive guide for first-time visitors:
+- Visa, money, transport, apps
+- Food culture and must-try dishes
+- Cultural etiquette and do's/don'ts
+- Hidden gems locals love
+- Historical context
+
+### taiwan-forum-search
+
+Search Taiwan's major online communities:
+- **PTT** — News, politics, tech jobs, stock
+- **Dcard** — Career, relationships, campus
+- **Mobile01** — 3C reviews, cars, home
+- **巴哈姆特** — Games, anime, ACG
+
+Use cases:
+- Company/interview research
+- Product reviews before buying
+- Salary benchmarks
+- Local sentiment on current events
 
 ---
 
 ## Quick Reference
 
-### Must-Know Before You Go
+### Travel Essentials
 
 | Topic | Quick Answer |
 |-------|--------------|
 | Visa | 90 days visa-free for most Western countries |
 | Currency | NT$ (New Taiwan Dollar). Cash is king. |
-| Transport | Get an EasyCard immediately. Works everywhere. |
-| Language | English OK in Taipei. Learn basic Chinese elsewhere. |
+| Transport | Get an EasyCard immediately |
 | Safety | Very safe. Walk alone at night. |
-| Tipping | Not expected. Don't tip. |
+| Tipping | Not expected |
 
-### Top Do's and Don'ts
-
-| ✅ Do | ❌ Don't |
-|-------|---------|
-| Give up seats on MRT | Sit in blue priority seats |
-| Remove shoes indoors | Eat/drink on MRT (it's illegal) |
-| Queue patiently | Write names in red ink |
-| Cover up at temples | Stick chopsticks upright in rice |
-| Carry cash | Assume everyone speaks English |
-
-### Must-Try Foods
-
-| Food | What It Is |
-|------|------------|
-| 牛肉麵 Beef Noodle Soup | National dish |
-| 小籠包 Soup Dumplings | Hot soup inside delicate dumplings |
-| 臭豆腐 Stinky Tofu | Smells bad, tastes good |
-| 珍珠奶茶 Bubble Tea | Taiwan invented it |
-| 滷肉飯 Braised Pork Rice | Comfort food |
-
----
-
-## Hidden Gems (What Tourists Miss)
-
-| Place | Why Go |
-|-------|--------|
-| **Lukang 鹿港** | Historic town loved by locals, skipped by tourists |
-| **Wulai 烏來** | Indigenous village + hot springs near Taipei |
-| **Yingge 鶯歌** | Ceramics town, buy pottery from artisans |
-| **Lanyu 蘭嶼** | Remote island, indigenous Tao culture |
-| **Chishang 池上** | Cycle through rice paddies |
-
----
-
-## The Real Taiwan
-
-### What Tourists See vs. Reality
-
-| Perception | Reality |
-|------------|---------|
-| "Everyone is friendly!" | Yes, but conflict avoidance too |
-| "English everywhere" | Taipei yes; elsewhere, learn Chinese |
-| "Modern and developed" | Cities yes; rural areas different |
-| "So safe!" | True, but use common sense |
-
-### Culture Shock Warnings
-
-- 🛵 **Scooters are everywhere** — cross carefully
-- 👀 **People may stare** — curiosity, not hostility
-- 🪳 **Big insects exist** — cockroaches fly (sorry)
-- ❓ **Personal questions are normal** — salary, marriage, age
-- 🔊 **Temples are loud** — religious practice, not noise
-
----
-
-## History in 60 Seconds
+### Forum Search Patterns
 
 ```
-Indigenous peoples (6,000+ years)
-         ↓
-Dutch/Spanish (1624-1662)
-         ↓
-Qing Dynasty (1683-1895)
-         ↓
-Japanese Rule (1895-1945) ← Major influence on culture
-         ↓
-ROC/KMT (1945-present) ← Retreat from mainland, martial law until 1987
-         ↓
-Democracy (1987-now) ← First direct election 1996
+# Interview experiences
+site:ptt.cc OR site:dcard.tw "[公司名]" 面試
+
+# Product reviews  
+site:mobile01.com "[產品]" 開箱
+
+# Salary discussions
+site:ptt.cc Tech_Job "[職位]" 年薪
 ```
 
-**Key point:** Taiwan's identity is complex. Neither simply "Chinese" nor "not Chinese."
+---
+
+## Planned Skills
+
+Want these? Let me know or contribute!
+
+- [ ] **taiwan-news** — Monitor Taiwan news sources, summarize current events
+- [ ] **taiwan-transport** — Real-time train/bus/HSR info, route planning
+- [ ] **taiwan-food** — Restaurant recommendations by area, booking help
+- [ ] **taiwan-weather** — Local weather + typhoon tracking
+- [ ] **taiwan-jobs** — Job board aggregation (104, 1111, CakeResume)
+- [ ] **taiwan-visa** — Immigration rules, ARC/work permit guidance
+- [ ] **taiwan-mandarin** — Taiwanese Mandarin specifics, slang, pronunciation
+- [ ] **taiwan-politics** — Political context explainer (for understanding news)
 
 ---
 
 ## Sources
 
-This guide draws from publicly available information:
-- Taiwan Tourism Bureau (eng.taiwan.net.tw)
-- Wikipedia (historical facts)
-- Reddit r/taiwan (expat experiences)
-- Lonely Planet, Rough Guides (travel logistics)
-
-No copyrighted content is reproduced verbatim.
+- Taiwan Tourism Bureau
+- Forum content (PTT, Dcard, Mobile01, Bahamut)
+- Public knowledge, no copyrighted content reproduced
 
 ---
 

@@ -2,12 +2,18 @@
 
 **Everything you need for Taiwan — travel, research, local context.**
 
-A growing collection of Taiwan-specific agent skills:
+A growing collection of Taiwan-specific agent skills.
 
 | Skill | Description |
 |-------|-------------|
-| [taiwan-guide](skills/taiwan-guide) | First-time visitor guide: culture, food, transport, history, hidden gems |
-| [taiwan-forum-search](skills/taiwan-forum-search) | Search Taiwan forums (PTT, Dcard, Mobile01, 巴哈姆特) |
+| [taiwan-guide](skills/taiwan-guide) | First-time visitor guide: culture, food, transport, history |
+| [taiwan-forum-search](skills/taiwan-forum-search) | Search PTT, Dcard, Mobile01, 巴哈姆特 |
+| [taiwan-food](skills/taiwan-food) | Restaurant guide, night markets, regional specialties |
+| [taiwan-news](skills/taiwan-news) | Media landscape, bias guide, fact-checking |
+| [taiwan-visa](skills/taiwan-visa) | Immigration, work permits, ARC, citizenship |
+| [taiwan-politics](skills/taiwan-politics) | Political system, parties, cross-strait context |
+| [taiwan-healthcare](skills/taiwan-healthcare) | NHI, hospitals, pharmacies, emergencies |
+| [taiwan-slang](skills/taiwan-slang) | PTT terms, internet slang, Taiwanese Mandarin |
 
 Works with Claude Code, Codex CLI, OpenClaw, and any Agent Skills-compatible tool.
 
@@ -23,98 +29,106 @@ npx skills add git@github.com:mcltyl/taiwan-guide-skills.git
 
 ### Manually
 
-#### Claude Code
-
-Add the contents of this repo to a `/.claude` folder in your project.
-
-#### OpenCode
-
 ```bash
-git clone https://github.com/mcltyl/taiwan-guide-skills.git ~/.opencode/skills/taiwan-skills
-```
-
-#### OpenClaw
-
-```bash
+# OpenClaw
 git clone https://github.com/mcltyl/taiwan-guide-skills.git ~/.openclaw/skills/taiwan-skills
+
+# OpenCode
+git clone https://github.com/mcltyl/taiwan-guide-skills.git ~/.opencode/skills/taiwan-skills
+
+# Claude Code
+# Add to /.claude folder in your project
 ```
 
 ---
 
 ## Skills Overview
 
-### taiwan-guide
+### Living & Daily Life
 
-Comprehensive guide for first-time visitors:
-- Visa, money, transport, apps
-- Food culture and must-try dishes
-- Cultural etiquette and do's/don'ts
-- Hidden gems locals love
-- Historical context
+| Skill | What It Covers |
+|-------|---------------|
+| **taiwan-food** | Night markets, breakfast shops, regional dishes, dietary restrictions, how to order |
+| **taiwan-healthcare** | NHI system, finding doctors, pharmacies, emergencies, costs |
+| **taiwan-slang** | PTT culture, internet expressions, Taiwanese Mandarin, youth slang |
 
-### taiwan-forum-search
+### Research & Context
 
-Search Taiwan's major online communities:
-- **PTT** — News, politics, tech jobs, stock
-- **Dcard** — Career, relationships, campus
-- **Mobile01** — 3C reviews, cars, home
-- **巴哈姆特** — Games, anime, ACG
+| Skill | What It Covers |
+|-------|---------------|
+| **taiwan-forum-search** | How to search PTT, Dcard, Mobile01, 巴哈姆特 |
+| **taiwan-news** | Media sources, political bias, fact-checking, how to read critically |
+| **taiwan-politics** | Parties, identity politics, cross-strait relations, historical context |
 
-Use cases:
-- Company/interview research
-- Product reviews before buying
-- Salary benchmarks
-- Local sentiment on current events
+### Immigration & Travel
+
+| Skill | What It Covers |
+|-------|---------------|
+| **taiwan-guide** | Complete first-time visitor guide |
+| **taiwan-visa** | Visa types, work permits, ARC, APRC, citizenship pathways |
+
+---
+
+## Design Principles
+
+These skills are built as **frameworks**, not **databases**:
+
+- ✅ Teach you **how to find** current information
+- ✅ Explain **how to interpret** what you find
+- ✅ Point to **official sources** for verification
+- ❌ Don't contain **fixed data** that goes stale
+
+**Always verify** important information with official sources.
 
 ---
 
 ## Quick Reference
 
-### Travel Essentials
+### Emergency Numbers
 
-| Topic | Quick Answer |
-|-------|--------------|
-| Visa | 90 days visa-free for most Western countries |
-| Currency | NT$ (New Taiwan Dollar). Cash is king. |
-| Transport | Get an EasyCard immediately |
-| Safety | Very safe. Walk alone at night. |
-| Tipping | Not expected |
+| Number | Service |
+|--------|---------|
+| 119 | Ambulance & Fire |
+| 110 | Police |
+| 1922 | CDC Hotline |
 
-### Forum Search Patterns
+### Essential Terms
 
-```
-# Interview experiences
-site:ptt.cc OR site:dcard.tw "[公司名]" 面試
+| Term | Meaning |
+|------|---------|
+| 捷運 | MRT (metro) |
+| 便當 | Lunch box |
+| 健保卡 | NHI card |
+| 推/噓 | Upvote/downvote (PTT) |
+| 歹勢 | Sorry (Taiwanese) |
 
-# Product reviews  
-site:mobile01.com "[產品]" 開箱
+### Political Shorthand
 
-# Salary discussions
-site:ptt.cc Tech_Job "[職位]" 年薪
-```
+| Color | Party |
+|-------|-------|
+| 🟢 綠 | DPP 民進黨 |
+| 🔵 藍 | KMT 國民黨 |
+| ⚪ 白 | TPP 民眾黨 |
 
 ---
 
 ## Planned Skills
 
-Want these? Let me know or contribute!
+Want these? Open an issue or contribute!
 
-- [ ] **taiwan-news** — Monitor Taiwan news sources, summarize current events
-- [ ] **taiwan-transport** — Real-time train/bus/HSR info, route planning
-- [ ] **taiwan-food** — Restaurant recommendations by area, booking help
-- [ ] **taiwan-weather** — Local weather + typhoon tracking
-- [ ] **taiwan-jobs** — Job board aggregation (104, 1111, CakeResume)
-- [ ] **taiwan-visa** — Immigration rules, ARC/work permit guidance
-- [ ] **taiwan-mandarin** — Taiwanese Mandarin specifics, slang, pronunciation
-- [ ] **taiwan-politics** — Political context explainer (for understanding news)
+- [ ] **taiwan-transport** — Real-time train/bus/HSR info
+- [ ] **taiwan-banking** — Opening accounts, payments
+- [ ] **taiwan-housing** — Rental system, 591, contracts
+- [ ] **taiwan-telecom** — Phone plans, SIM cards
+- [ ] **taiwan-shopping** — E-commerce, convenience stores
+- [ ] **taiwan-holidays** — Calendar, customs
+- [ ] **taiwan-emergency** — Detailed emergency procedures
 
 ---
 
-## Sources
+## Contributing
 
-- Taiwan Tourism Bureau
-- Forum content (PTT, Dcard, Mobile01, Bahamut)
-- Public knowledge, no copyrighted content reproduced
+Found something outdated? Know a better way to explain something? PRs welcome!
 
 ---
 
